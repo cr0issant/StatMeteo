@@ -4,7 +4,7 @@ echo "Recherche des températures maximales d'un jour de l'année sur plusieurs 
 echo 'Code commune ?'
 read CodeCommune
 CodeCommune+='0'
-echo 'Jour ? ( Format : 05, 14 )'
+echo 'Jour ?'
 read Jour
 echo 'Mois ?'
 read Mois
