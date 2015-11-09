@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Recherche des températures maximales d\'un jour de l\'année sur plusieurs années"
+echo "Recherche des températures maximales d'un jour de l'année sur plusieurs années"
 echo 'Code commune ?'
 read CodeCommune
 CodeCommune+='0'
@@ -8,7 +8,7 @@ echo 'Jour ? ( Format : 05, 14 )'
 read Jour
 echo 'Mois ?'
 read Mois
-echo 'Année de départ ?'
+echo 'Année de départ ? ( Minimum 1965 )'
 read Start
 echo 'Année de fin ?'
 read End
