@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Recherche des températures maximales d'un jour de l'année sur plusieurs années"
+echo "Recherche des températures maximales sur plusieurs jours"
 echo 'Code commune ?'
 read CodeCommune
 CodeCommune+='0'
@@ -21,7 +21,6 @@ echo "Année;Max" >> $FileCsv
 
 for i in $(seq $Start $End);
 do
-	#echo "$Jour-$Mois-$i" >> $FileCsv 
 	curl "$Lieu$i" | grep maximale\ de\ la\ journée >> $FileCsv
 	sed -i -e "s/                                                                    <li>Température maximale de la journée : /$Jour-$Mois-$i;/g" $FileCsv
 	sed -i -e "s/°C<\/li>//g" $FileCsv
